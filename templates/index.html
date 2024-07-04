@@ -15,15 +15,18 @@
     </header>
     <main class="container">
         <!-- Sección 1: Evaluación de Expresiones -->
+      
         <section class="input-section">
             <label for="expression">Ingrese expresiones, separadas por ';' o salto de línea:</label>
             <textarea id="expression" placeholder="Ejemplo: a=2;b=3;c=a*b"></textarea>
-            <button id="evaluateButton"><i class="fas fa-calculator"></i> Evaluar</button>
+            <button id="executeButton"><i class="fas fa-play"></i> Ejecutar</button>
+            <button id="viewValuesButton"><i class="fas fa-eye"></i> Ver Valores Guardados</button>
+          
             <button id="showTokensButton"><i class="fas fa-list"></i> Ver Tokens</button>
             <button id="clearStorageButton"><i class="fas fa-trash-alt"></i> Borrar Datos</button>
-        </section>
+      </section>
         <section class="output-section">
-            <h2>Resultados</h2>
+            <h2>Valores</h2>
             <div id="result"></div>
         </section>
         <section class="output-section">
