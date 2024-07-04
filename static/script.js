@@ -374,7 +374,7 @@ function generateTreeFromCopy(event) {
 function generateSyntaxTree(expression) {
   console.log("Expression sent to server:", expression); // Debugging line
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'http://127.0.0.1:5000/generate-syntax-tree', true);
+   xhr.open('POST', '/generate-syntax-tree', true);  // Usar ruta relativa
   xhr.setRequestHeader('Content-Type', 'application/json');
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
